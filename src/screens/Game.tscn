@@ -1,3 +1,55 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/background.jpg" type="Texture" id=1]
+[ext_resource path="res://assets/grid.png" type="Texture" id=2]
+[ext_resource path="res://Cell.tscn" type="PackedScene" id=3]
 
 [node name="Game" type="Node2D"]
+
+[node name="background" type="Sprite" parent="."]
+light_mask = 0
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="grid" type="Sprite" parent="."]
+position = Vector2( 512, 300 )
+texture = ExtResource( 2 )
+
+[node name="Cells" type="Node" parent="."]
+
+[node name="Cell1" parent="Cells" instance=ExtResource( 3 )]
+position = Vector2( 352.585, 140.105 )
+scale = Vector2( 2, 2 )
+
+[node name="Cell2" parent="Cells" instance=ExtResource( 3 )]
+position = Vector2( 511.235, 140.105 )
+scale = Vector2( 2, 2 )
+
+[node name="Cell3" parent="Cells" instance=ExtResource( 3 )]
+position = Vector2( 671.785, 140.105 )
+scale = Vector2( 2, 2 )
+
+[node name="Cell4" parent="Cells" instance=ExtResource( 3 )]
+position = Vector2( 352.585, 300.655 )
+scale = Vector2( 2, 2 )
+
+[node name="Cell5" parent="Cells" instance=ExtResource( 3 )]
+position = Vector2( 511.235, 300 )
+scale = Vector2( 2, 2 )
+
+[node name="Cell6" parent="Cells" instance=ExtResource( 3 )]
+position = Vector2( 671.785, 300 )
+scale = Vector2( 2, 2 )
+
+[node name="Cell7" parent="Cells" instance=ExtResource( 3 )]
+position = Vector2( 352.585, 460 )
+scale = Vector2( 2, 2 )
+
+[node name="Cell8" parent="Cells" instance=ExtResource( 3 )]
+position = Vector2( 511.235, 460 )
+scale = Vector2( 2, 2 )
+
+[node name="Cell9" parent="Cells" instance=ExtResource( 3 )]
+position = Vector2( 671.785, 460 )
+scale = Vector2( 2, 2 )

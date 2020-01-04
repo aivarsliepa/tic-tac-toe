@@ -15,12 +15,11 @@ _global_script_class_icons={
 
 [application]
 
-config/name="New Game Project"
-config/icon="res://icon.png"
+config/name="Tic Tac Toe"
+run/main_scene="res://src/screens/Game.tscn"
 
 [rendering]
 
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
-environment/default_environment="res://default_env.tres"
